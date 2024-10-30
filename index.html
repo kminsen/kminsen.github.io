@@ -17,9 +17,9 @@
   </head>
   <body class="font-poppins">
     <div
-      class="h-1/2 lg:h-screen xl:h-screen bg-gradient-to-t from-cyan-100 relative overflow-hidden"
+      class="h-1/2 lg:h-screen xl:h-screen bg-gradient-to-t from-cyan-100 relative"
     >
-      <nav class="fixed top-0 w-full bg-transparent">
+      <nav class="fixed top-0 w-full bg-white z-50">
         <div class="container mx-auto py-5 flex items-center justify-between">
           <div class="flex items-center gap-2">
             <img class="w-10" src="./img/logo.png" alt="" />
@@ -30,16 +30,16 @@
               <a href="#">Home</a>
             </li>
             <li class="hover:text-gray-500">
-              <a href="#">About Me</a>
+              <a href="#about">About Me</a>
             </li>
             <li class="hover:text-gray-500">
-              <a href="#">Experience</a>
+              <a href="#work">Experience</a>
             </li>
             <li class="hover:text-gray-500">
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li class="hover:text-gray-500">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <!-- hamburgerlines -->
@@ -72,9 +72,31 @@
           </ul>
         </div>
       </nav>
+      <div
+        class="bg-cyan-50 min-h-screen flex flex-col items-center justify-center text-center py-16"
+      >
+        <!-- Main Heading -->
+        <h1 class="text-5xl font-bold text-cyan-700 mb-6">
+          Welcome to My Portfolio Website
+        </h1>
+
+        <!-- Sub Heading -->
+        <p class="text-xl text-cyan-500 mb-10">Currently Open to Hire</p>
+
+        <!-- Decorative Line -->
+        <div class="w-24 h-1 bg-cyan-400 mb-6"></div>
+
+        <!-- Call to Action Button -->
+        <a
+          href="#contact"
+          class="bg-cyan-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-cyan-500 transition-colors duration-300"
+        >
+          Contact Me
+        </a>
+      </div>
     </div>
     <!-- introduction -->
-    <div class="px-2">
+    <div id="about" class="px-2">
       <div
         class="container mx-auto py-40 flex flex-col-reverse items-center lg:flex-row gap-20"
       >
@@ -110,6 +132,173 @@
           <div class="w-full bg-gray-200 h-1.5 rounded-md">
             <div class="w-full bg-cyan-600 h-1.5 rounded-md"></div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div id="work" class="bg-cyan-50 py-16">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <h2 class="text-4xl font-bold text-cyan-700 text-center mb-12">
+          Work Experience
+        </h2>
+
+        <!-- Work Experience Cards -->
+        <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"> -->
+        <div class="contianer flex flex-col">
+          <!-- Experience 1 -->
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-cyan-600 mb-2">
+              Job Title 1
+            </h3>
+            <p class="text-gray-600 mb-4">Company Name</p>
+            <span class="block text-sm text-cyan-500 mb-4"
+              >Jan 2021 - Present</span
+            >
+            <p class="text-gray-700">
+              Brief description of your role, responsibilities, and key
+              achievements at this job. Highlight any special projects or skills
+              gained.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="projects" class="bg-cyan-50 py-16">
+      <div class="container mx-auto">
+        <h1
+          class="text-4xl font-bold text-cyan-600 text-center mb-12 uppercase"
+        >
+          Projects
+        </h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Portfolio Item 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://via.placeholder.com/300x200"
+              alt="Project Image"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold text-cyan-600">
+                Project Title 1
+              </h2>
+              <p class="text-gray-700 mt-4">
+                A brief description of the project goes here. Explain what the
+                project is about and the technologies used.
+              </p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://via.placeholder.com/300x200"
+              alt="Project Image"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold text-cyan-600">
+                Project Title 2
+              </h2>
+              <p class="text-gray-700 mt-4">
+                A brief description of the project goes here. Explain what the
+                project is about and the technologies used.
+              </p>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://via.placeholder.com/300x200"
+              alt="Project Image"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold text-cyan-600">
+                Project Title 3
+              </h2>
+              <p class="text-gray-700 mt-4">
+                A brief description of the project goes here. Explain what the
+                project is about and the technologies used.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact" class="bg-cyan-50 py-16">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <h2 class="text-4xl font-bold text-cyan-700 text-center mb-8">
+          Contact Me
+        </h2>
+
+        <!-- Contact Details -->
+        <div
+          class="flex flex-col items-center justify-center text-center space-y-4"
+        >
+          <!-- Email -->
+          <a
+            href="mailto:your.email@example.com"
+            class="text-xl text-cyan-600 hover:text-cyan-700"
+          >
+            <i class="fas fa-envelope"></i> your.email@example.com
+          </a>
+
+          <!-- Phone Number -->
+          <a
+            href="tel:+1234567890"
+            class="text-xl text-cyan-600 hover:text-cyan-700"
+          >
+            <i class="fas fa-phone"></i> +123 456 7890
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            class="text-xl text-cyan-600 hover:text-cyan-700"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn Profile
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            class="text-xl text-cyan-600 hover:text-cyan-700"
+          >
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+        </div>
+
+        <!-- Decorative Line -->
+        <div class="mt-8 w-24 h-1 bg-cyan-400 mx-auto"></div>
+
+        <!-- Call to Action Button -->
+        <div class="text-center mt-8">
+          <a
+            href="mailto:your.email@example.com"
+            class="bg-cyan-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-cyan-500 transition-colors duration-300"
+          >
+            Send Me a Message
+          </a>
         </div>
       </div>
     </div>
