@@ -19,34 +19,38 @@
     <div
       class="h-1/2 lg:h-screen xl:h-screen bg-gradient-to-t from-cyan-100 relative"
     >
-      <nav class="fixed top-0 w-full bg-white z-50">
+      <nav class="fixed top-0 w-full bg-cyan-50 z-50">
         <div class="container mx-auto py-5 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <img class="w-10" src="./img/logo.png" alt="" />
-            <span>Koay Min Sen</span>
-          </div>
+          <!-- <div class="flex items-center gap-2"> -->
+          <!-- <img class="w-10" src="./img/logo.png" alt="" /> -->
+          <!-- <span class="text-2xl">Koay Min Sen's Website</span> -->
+          <!-- </div> -->
+          <p class="text-cyan-600">
+            Created with <span id="footer"></span> by minsen
+          </p>
+
           <ul class="hidden md:flex space-x-10 font-bold uppercase">
-            <li class="hover:text-gray-500">
+            <li class="text-cyan-700 hover:text-cyan-500">
               <a href="#">Home</a>
             </li>
-            <li class="hover:text-gray-500">
+            <li class="text-cyan-700 hover:text-cyan-500">
               <a href="#about">About Me</a>
             </li>
-            <li class="hover:text-gray-500">
+            <li class="text-cyan-700 hover:text-cyan-500">
               <a href="#work">Experience</a>
             </li>
-            <li class="hover:text-gray-500">
+            <li class="text-cyan-700 hover:text-cyan-500">
               <a href="#projects">Projects</a>
             </li>
-            <li class="hover:text-gray-500">
+            <li class="text-cyan-700 hover:text-cyan-500">
               <a href="#contact">Contact</a>
             </li>
           </ul>
           <!-- hamburgerlines -->
           <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-cyan-600"></div>
+            <div class="w-6 h-0.5 bg-cyan-600"></div>
+            <div class="w-6 h-0.5 bg-cyan-600"></div>
           </div>
 
           <!-- hamburger popup menu -->
@@ -55,19 +59,19 @@
             class="hidden bg-cyan-600 absolute left-0 top-0 w-full p-10 space-y-5 text-center rounded-b-3xl text-white"
           >
             <li>
-              <a href="#">Home</a>
+              <a id="hLink" href="#">Home</a>
             </li>
             <li>
-              <a href="#">About Me</a>
+              <a id="hLink" href="#about">About Me</a>
             </li>
             <li>
-              <a href="#">Experience</a>
+              <a id="hLink" href="#work">Experience</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a id="hLink" href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a id="hLink" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -76,8 +80,8 @@
         class="bg-cyan-50 min-h-screen flex flex-col items-center justify-center text-center py-16"
       >
         <!-- Main Heading -->
-        <h1 class="text-5xl font-bold text-cyan-700 mb-6">
-          Welcome to My Portfolio Website
+        <h1 id="autotext" class="text-6xl font-bold text-cyan-700 mb-6">
+          <!-- Welcome to My Portfolio Website -->
         </h1>
 
         <!-- Sub Heading -->
@@ -96,7 +100,7 @@
       </div>
     </div>
     <!-- introduction -->
-    <div id="about" class="px-2">
+    <div id="about" class="px-2 bg-cyan-50">
       <div
         class="container mx-auto py-40 flex flex-col-reverse items-center lg:flex-row gap-20"
       >
@@ -116,21 +120,24 @@
           <h1 class="text-3xl font-medium">Nanjing University Graduate</h1>
           <h1 class="text-3xl font-medium">Passion in Machine Learning / AI</h1>
           <p class="text-gray-400">
-            I design and build digital products. I'm also a multi-disciplinary
-            maker with over 10 years of experiences in wide range of design
-            disciplines.
+            I'm a recent graduate from Nanjing University with a strong passion
+            for machine learning and artificial intelligence. I’m driven by the
+            potential of data and automation to solve real-world challenges, and
+            I enjoy applying my coding skills to turn insights into impactful
+            solutions. My goal is to continuously expand my expertise in data
+            science and AI, bringing innovative approaches to complex problems.
           </p>
-          <h2 class="text-gray-400 font-medium">HTML</h2>
+          <h2 class="text-gray-400 font-medium">Python</h2>
           <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-full bg-cyan-600 h-1.5 rounded-md"></div>
+            <div class="w-5/6 bg-cyan-600 h-1.5 rounded-md"></div>
           </div>
-          <h2 class="text-gray-400 font-medium">HTML</h2>
+          <h2 class="text-gray-400 font-medium">C++</h2>
           <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-full bg-cyan-600 h-1.5 rounded-md"></div>
+            <div class="w-6/7 bg-cyan-600 h-1.5 rounded-md"></div>
           </div>
-          <h2 class="text-gray-400 font-medium">HTML</h2>
+          <h2 class="text-gray-400 font-medium">SQL</h2>
           <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-full bg-cyan-600 h-1.5 rounded-md"></div>
+            <div class="w-5/6 bg-cyan-600 h-1.5 rounded-md"></div>
           </div>
         </div>
       </div>
@@ -152,11 +159,11 @@
             class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 duration-300"
           >
             <h3 class="text-2xl font-semibold text-cyan-600 mb-2">
-              Job Title 1
+              Industrial Trainee
             </h3>
-            <p class="text-gray-600 mb-4">Company Name</p>
+            <p class="text-gray-600 mb-4">Jabil</p>
             <span class="block text-sm text-cyan-500 mb-4"
-              >Jan 2021 - Present</span
+              >July 2022 - September 2022</span
             >
             <p class="text-gray-700">
               Brief description of your role, responsibilities, and key
@@ -179,64 +186,89 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <!-- Portfolio Item 1 -->
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+          <a
+            href="https://github.com/kminsen/predicting-brain-age"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://via.placeholder.com/300x200"
-              alt="Project Image"
-            />
-            <div class="p-6">
-              <h2 class="text-2xl font-semibold text-cyan-600">
-                Project Title 1
-              </h2>
-              <p class="text-gray-700 mt-4">
-                A brief description of the project goes here. Explain what the
-                project is about and the technologies used.
-              </p>
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+            >
+              <img
+                class="w-full h-48 object-cover"
+                src="./img/brain.avif"
+                alt="Project Image"
+              />
+
+              <div class="p-6">
+                <h2 class="text-2xl font-semibold text-cyan-600">
+                  Predicting Brain Age
+                </h2>
+                <p class="text-gray-700 mt-4">
+                  This project focuses on predicting the brain age of healthy
+                  adults using multivariate regression analysis.
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
 
           <!-- Portfolio Item 2 -->
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+          <a
+            href="https://github.com/kminsen/online-retail"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://via.placeholder.com/300x200"
-              alt="Project Image"
-            />
-            <div class="p-6">
-              <h2 class="text-2xl font-semibold text-cyan-600">
-                Project Title 2
-              </h2>
-              <p class="text-gray-700 mt-4">
-                A brief description of the project goes here. Explain what the
-                project is about and the technologies used.
-              </p>
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+            >
+              <img
+                class="w-full h-48 object-cover"
+                src="./img/onlineretail.jpg"
+                alt="Project Image"
+              />
+
+              <div class="p-6">
+                <h2 class="text-2xl font-semibold text-cyan-600">
+                  Online Retail Anaylsis
+                </h2>
+                <p class="text-gray-700 mt-4">
+                  This repository contains an analysis of an online retail
+                  dataset, focusing on customer segmentation using Recency,
+                  Frequency, and Monetary (RFM) analysis. It also includes an
+                  exploratory data analysis (EDA) to gain insights into the
+                  dataset.
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
 
           <!-- Portfolio Item 3 -->
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+          <a
+            href="https://github.com/kminsen/employee-attrition"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://via.placeholder.com/300x200"
-              alt="Project Image"
-            />
-            <div class="p-6">
-              <h2 class="text-2xl font-semibold text-cyan-600">
-                Project Title 3
-              </h2>
-              <p class="text-gray-700 mt-4">
-                A brief description of the project goes here. Explain what the
-                project is about and the technologies used.
-              </p>
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+            >
+              <img
+                class="w-full h-48 object-cover"
+                src="./img/employee_retention.webp"
+                alt="Project Image"
+              />
+
+              <div class="p-6">
+                <h2 class="text-2xl font-semibold text-cyan-600">
+                  Employee Retention Analysis
+                </h2>
+                <p class="text-gray-700 mt-4">
+                  This repository represents my first foray into data science,
+                  specifically focusing on analyzing employee attrition using
+                  various machine learning and statistical methods.
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -258,51 +290,58 @@
             href="mailto:your.email@example.com"
             class="text-xl text-cyan-600 hover:text-cyan-700"
           >
-            <i class="fas fa-envelope"></i> your.email@example.com
+            <i class="fas fa-envelope"></i> guominxuan99@gmail.com
           </a>
 
           <!-- Phone Number -->
           <a
-            href="tel:+1234567890"
+            href="tel:+60127689495"
             class="text-xl text-cyan-600 hover:text-cyan-700"
           >
-            <i class="fas fa-phone"></i> +123 456 7890
+            <i class="fas fa-phone"></i> +60127689495
           </a>
 
           <!-- LinkedIn -->
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/kminsen99"
             target="_blank"
             class="text-xl text-cyan-600 hover:text-cyan-700"
           >
-            <i class="fab fa-linkedin"></i> LinkedIn Profile
+            <i class="fab fa-linkedin"></i> LinkedIn
           </a>
 
           <!-- GitHub -->
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/kminsen"
             target="_blank"
             class="text-xl text-cyan-600 hover:text-cyan-700"
           >
-            <i class="fab fa-github"></i> GitHub Profile
+            <i class="fab fa-github"></i> GitHub
           </a>
         </div>
 
         <!-- Decorative Line -->
         <div class="mt-8 w-24 h-1 bg-cyan-400 mx-auto"></div>
 
-        <!-- Call to Action Button -->
         <div class="text-center mt-8">
           <a
-            href="mailto:your.email@example.com"
+            href="./pdf/koay_min_sen.pdf"
             class="bg-cyan-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-cyan-500 transition-colors duration-300"
           >
-            Send Me a Message
+            Download My Resume
           </a>
         </div>
       </div>
     </div>
 
     <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+    <script>
+      new AutoTyping("#footer", ["❤️", "☕", "⌨️", "💻"], {
+        waitBeforeDelete: 1000,
+        waitBetweenWords: 10,
+        writeWhole: true,
+      }).start();
+    </script>
   </body>
 </html>
